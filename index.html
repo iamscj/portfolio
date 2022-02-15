@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=style.css>
+    <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css' rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>SHREYASA JOSHI</title>
+    <link rel="icon" href='images/logo.png' type="image/x-icon">
+
+</head>
+<style>
+    #j {
+        /* background: url('{% static 'images/wallpaper.png');
+		background-position: center; /* Center the image */
+        /* background-repeat: no-repeat; /* Do not repeat the image */
+        /* background-size: cover;   */
+        background: rgb(86 86 86);
+        font-family: 'Montserrat', sans-serif;
+        overflow-x: hidden;
+        background: linear-gradient(top, #443d3d 0%,#35352f 16%,#484b48 32%,#1c1d1d 50%,#37373b 66%,#3d3a3d 82%,#413a3a 100%);
+
+	/* Firefox */
+	background: -moz-linear-gradient(top, #292727 0%, #33332f 16%, #0a0a0a 32%, #313535 50%, #1c1c1f 66%, #1d1a1d 82%, #1f1c1c 100%);
+
+	/* Chrome,Safari4+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1f1d1d), color-stop(16%,#2c2c29), color-stop(32%,#1b1b1b), color-stop(50%,#373b3b), color-stop(66%,#252527), color-stop(82%,#ff28fb), color-stop(100%,#1a1717));
+
+	/* Chrome10+,Safari5.1+ */
+	background: -webkit-linear-gradient(top, #222020 0%,#252523 16%,#2e302e 32%,#0f0f0f 50%,#414144 66%,#110f11 82%,#ff3232 100%);
+
+	background-size: 1000%;
+	-moz-background-size: 1000%;
+	-webkit-background-size: 1000%;	
+
+	/* W3C */
+	animation-name: fun-time-awesome;
+	animation-duration: 40s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-play-state: running;
+
+	/* Firefox: */
+	-moz-animation-name: fun-time-awesome;
+	-moz-animation-duration: 40s;
+	-moz-animation-timing-function: linear;
+	-moz-animation-iteration-count: infinite;
+	-moz-animation-direction: alternate;
+	-moz-animation-play-state: running;
+
+	/* Chrome, Safari */
+	-webkit-animation-name: fun-time-awesome;
+	-webkit-animation-duration: 40s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-play-state: running;
+}
+
+/* W3C */
+@keyframes fun-time-awesome {
+	0% {background-position: left top;}
+	100% {background-position: left bottom;}
+}
+
+/* Firefox */
+@-moz-keyframes fun-time-awesome {
+	0% {background-position: left top;}
+	100% {background-position: left bottom;}
+}
+
+/* Chrome, Safari */
+@-webkit-keyframes fun-time-awesome {
+	0% {background-position: left top;}
+	100% {background-position: left bottom;}
+
+    }
+
+    .mybody {
+        width: 70%;
+        background-color: #d2d2d2;
+        margin: auto;
+        margin-top: 3%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        display: block;
+        margin: auto;
+        margin-top: 1%;
+        margin-bottom: 1%;
+        background-color: #a0a0a0;
+    }
+
+    #logo {
+        width: 8.5rem;
+        height: 2.5rem;
+    }
+
+    .h3mybody {
+        width: 100%;
+        text-align: center;
+        background: #b6b6b6;
+    }
+
+    .aboutpara {
+        text-align: center;
+        margin: auto;
+        padding: 3%;
+        font-style: oblique;
+    }
+
+    .shreyasacarousel {
+        padding-top: 2%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1%;
+        width: 100%;
+        margin-top: 3rem;
+    }
+
+    .mybody1 {
+        width: 80%;
+        background-color: #d2d2d2;
+        margin: auto;
+        margin-top: 2%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    footer{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #111;
+    height: auto;
+    width: 99vw;
+    font-family: "Open Sans";
+    padding-top: 40px;
+    color: #fff;
+	margin-top: 5%;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    color: #fff;
+}
+.socials a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+
+}
+.socials a:hover i{
+    color: aqua;
+}
+
+.footer-bottom{
+    background: #000;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+
+</style>
+
+<body id="j">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/"><img src="images/logo.png" id="logo" alt="SJ" srcset=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#aboutsection">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skillsection">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/iamscj" target="_blank">Projects</a>
+                    </li>
+                </ul>
+            </div>
+        </div> 
+    </nav>
+
+
+    <div class="shreyasacarousel">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+
+
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/wallpaper3.png" class="imgs img-fluid" alt="...">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mybody1">
+        <p class="aboutpara">" Hello There, Myself Shreyasa Joshi. This is my personal portfolio site. Here I am trying
+            to upload my projects and some different ideas which are going to be implemented. Hope you all like the
+            Blog. Enjoy your day, Thank you :-)... "</p>
+    </div>
+
+    <section id="aboutsection">
+        <div class="mybody">
+            <div class="h3mybody">
+                <h3>ABOUT</h3>
+            </div>
+
+            <p class=aboutpara>Myself Shreyasa Joshi, I'm studying in RV COLLEGE OF ENGINEERING Computer Science Branch.
+                My field of interests are Web Development, Machine Learning and Artificial Intelligence and
+                Cybersecurity. I do Competitive Coding. I have been working in development field since very long and to
+                see my projects do visit MY PROJECTS section. AI ML is my recent interest. I have been working on a
+                project called TRAFFIC SIGNAL IMPLEMENTATION IN BLIND TURNINGS. To see my achievements do visit
+                ACHIEVEMENTS section. And you can see my RESUME here. THANK YOU.</p>
+        </div>
+    </section>
+
+    <section id="skillsection">
+        <div class="mybody">
+            <div class="h3mybody">
+                <h3>SKILLS</h3>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="images/django.png" class="img-fluid img-thumbnail" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="images/python_logo.png" class="img-fluid img-thumbnail" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="images/javascript.png" class="img-fluid img-thumbnail" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="images/html_logo.png" class="img-fluid img-thumbnail" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="images/css_logo.png" class="img-fluid img-thumbnail" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="images/bootstrap_logo.png" class="img-fluid img-thumbnail" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="images/ai_ml.png" class="img-fluid img-thumbnail" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <h3>Shreyasa Joshi</h3>
+            <p style="margin: auto;">" KEEP GRINDING, NO ONE CAN STOP YOU "</p>
+            <ul class="socials">
+                <li><a href="https://www.instagram.com/shreyasa_joshi/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="https://github.com/iamscj"><i class="fa fa-github" target="_blank"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus" target="_blank"></i></a></li>
+                <li><a href="https://bit.ly/3fojOdo" target="_blank"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/shreyasa-joshi-1a3048200"><i class="fa fa-linkedin-square"
+                            target="_blank"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>copyright &copy;2022 Shreyasa. designed by <span>Shreyasa</span></p>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
